@@ -1,0 +1,48 @@
+{
+  "name": "@trauma-platform/web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Next.js web application for trauma-informed platform",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:e2e": "playwright test",
+    "clean": "rm -rf .next .turbo node_modules"
+  },
+  "dependencies": {
+    "@trauma-platform/sdk": "*",
+    "@trauma-platform/security": "*",
+    "@trauma-platform/types": "*",
+    "@trauma-platform/ui": "*",
+    "@trauma-platform/validation": "*",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.0.0",
+    "jsdom": "^30.0.1",
+    "playwright": "^1.40.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^0.34.0"
+  }
+}

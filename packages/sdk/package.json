@@ -1,0 +1,30 @@
+{
+  "name": "@trauma-platform/sdk",
+  "version": "1.0.0",
+  "description": "Typed API client SDK for the trauma-informed platform",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "clean": "rm -rf dist .turbo"
+  },
+  "keywords": ["sdk", "api-client", "typed"],
+  "license": "MIT",
+  "dependencies": {
+    "@trauma-platform/types": "*",
+    "@trauma-platform/validation": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
+
