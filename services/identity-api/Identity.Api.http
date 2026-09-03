@@ -1,0 +1,7 @@
+### Health check
+GET http://localhost:5000/health
+Accept: application/json
+
+### OpenAPI
+GET http://localhost:5000/openapi
+Accept: application/json

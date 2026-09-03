@@ -1,0 +1,25 @@
+{
+  "name": "@trauma-platform/localization",
+  "version": "1.0.0",
+  "description": "Localization and internationalization infrastructure",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src", "locales"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "clean": "rm -rf dist .turbo"
+  },
+  "keywords": ["i18n", "localization", "internationalization"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

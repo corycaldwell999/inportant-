@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Trauma Platform",
+    "slug": "trauma-platform",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#f5f4f1"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f5f4f1"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@trauma-platform/ui",
+  "version": "1.0.0",
+  "description": "Shared accessible design system components",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "clean": "rm -rf dist .turbo"
+  },
+  "keywords": ["design-system", "ui", "components", "accessible"],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

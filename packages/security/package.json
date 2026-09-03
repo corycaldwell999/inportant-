@@ -1,0 +1,25 @@
+{
+  "name": "@trauma-platform/security",
+  "version": "1.0.0",
+  "description": "Client-side security utilities for the trauma-informed platform",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "clean": "rm -rf dist .turbo"
+  },
+  "keywords": ["security", "client-side", "utilities"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

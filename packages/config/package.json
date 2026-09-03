@@ -1,0 +1,13 @@
+{
+  "name": "@trauma-platform/config",
+  "version": "1.0.0",
+  "description": "Shared configuration for linting, formatting, and TypeScript",
+  "private": true,
+  "files": ["tsconfig.json", ".eslintrc.json", ".prettierrc"],
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write ."
+  },
+  "keywords": ["config", "eslint", "prettier", "typescript"],
+  "license": "MIT"
+}
